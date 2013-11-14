@@ -15,8 +15,6 @@ from google.appengine.ext.webapp.util import run_wsgi_app
 from main import OAuthAccessToken
 from apptwitter import AppEngineTwitter
 from database import fxdb
-from boxcargae import BoxcarApi
-from string import Template
 
 _max_fetch_count = 9
 
@@ -98,19 +96,7 @@ class CRONServiceHandler(webapp.RequestHandler):
                  usdOfferRate=haha[12],
                  usdBillBidRate=haha[13],
                  usdUpdateTime=haha[15]).put()
-        _api_key = 'CMl59ZQnEXv6y9qxpVa1'
-        _api_sec = 'wz5dCO63okFG2vX08nsOmZQctljxtRLIg3xVW9wS'
-        _your_email = 'neilma@hotmail.com'
-        boxcar = BoxcarApi(_api_key,
-                           _api_sec,
-                           'http://img.neoease.org/2011/08/star.jpg')    
-        template = Template('Hey $email this was sent')
-        message = template.substitute(email=_your_email)
-        mailSubject = '招行澳元汇率提醒:' + haha[3]
-        boxcar.notify(_your_email,
-                      mailSubject,
-                      message,
-                      message_id=int(datetime.datetime.now().strftime('%f')) / 1000)
+
 logging.getLogger().setLevel(logging.DEBUG)
 ereporter.register_logger()
 application = webapp.WSGIApplication([('/cron_service', CRONServiceHandler)],debug=True)                                      
