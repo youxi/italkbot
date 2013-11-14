@@ -1,0 +1,9 @@
+backends:
+
+- name: fetchbackend
+  
+  class: B1
+  
+  instances: 1
+  
+  options: dynamic

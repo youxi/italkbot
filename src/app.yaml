@@ -1,0 +1,34 @@
+application: italkbot
+version: 1
+runtime: python
+api_version: 1
+
+inbound_services:
+- xmpp_message
+
+handlers:
+- url: /_ah/xmpp/message/chat/
+  script: xmpp_handler.py
+
+- url: /css
+  static_dir: css
+
+- url: /img
+  static_dir: img
+
+- url: /cron_service
+  script: cron_service.py
+
+- url: /_ereporter.*
+  script: $PYTHON_LIB/google/appengine/ext/ereporter/report_generator.py
+  login: admin
+
+- url: /_ah/start
+  script: backends.py 
+
+- url: /backend/fetch
+  script: backends.py
+
+- url: .*
+  script: main.py
+  secure: optional

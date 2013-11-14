@@ -1,0 +1,34 @@
+cron:
+
+- description: every day exchange rate update
+  
+  url: /cron_service 
+
+#  schedule: every mon,tue,wed,thu,fri 19:00
+  
+  schedule: every 3 mins from 8:00 to 22:00
+  
+  timezone: Asia/Shanghai
+
+
+
+- description: every day exchange rate update -backend
+  
+  url: /backend/fetch 
+  
+  schedule: every mon,tue,wed,thu,fri 19:00
+#  schedule: every 1 mins
+ 
+  timezone: Asia/Shanghai
+  
+  target: fetchbackend
+
+
+
+#- description: Daily exception report
+  
+#  url: /_ereporter?sender=maming622@gmail.com&delete=false
+  
+#  schedule: every day 00:00
+  
+#  timezone: Asia/Shanghai

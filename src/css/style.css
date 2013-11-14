@@ -1,0 +1,182 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0px;
+	background:#eff1f5;
+}
+
+a {
+	color:#1f96bf;
+	text-decoration: none;
+}
+a:visited {
+	color:#1f96bf;
+}
+
+a:hover {
+	color: #333;
+	text-decoration: none;
+}
+
+
+
+#top{
+	height:20px;
+	width:100%;
+	background:url(../img/top.jpg);
+}
+
+
+#header{
+    clear:both;
+	margin-top:0px;
+	height:170px;
+	width:100%;
+	background: url(../img/headbg.png);
+}
+
+#header_bottom{
+	height:20px;
+	width:100%;
+	background: url(../img/hbottom.jpg);
+}
+
+#header_box{
+	margin:0 auto;
+	margin-bottom:20px;
+	height:160px;
+	width:980px;
+}
+
+
+
+#container{
+	margin:0 auto;
+	width:980px;
+	background:#eff1f5;
+}
+
+
+
+#navCircle {
+        margin-top: 135px;
+		margin-left:50px;
+        padding: 0 0 0px 10px;
+		float:left;
+
+}
+
+#navCircle li {
+        margin: 0;
+        padding: 0;
+        display: inline;
+        list-style-type: none;
+}
+
+#navCircle a:link, #navCircle a:visited {
+        float: left;
+        font: 15px 'Lucida Sans Unicode',Tahoma, Verdana, Arial, Sans-Serif; 
+        line-height: 14px;
+        font-weight: bold;
+        padding: 2px 0px 6px 0px;
+		margin-left:50px;
+        text-decoration: none;
+        color: #fff;
+}
+
+#navCircle a:link.active, #navCircle a:visited.active, #navCircle a:hover {
+        padding-bottom: 6px;
+        color: #accee2;
+}
+
+#intro{
+	float:left;
+	padding:10px 40px 50px 50px;
+	font: 15px  'Lucida Sans Unicode',Tahoma, Helvetica, sans-serif;
+	color:#333333;
+	width:530px;
+	line-height: 190%;
+}
+
+#intro h2{
+	font: 20px  Tahoma, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#1f96bf;
+	margin-top:55px;
+
+}
+
+
+
+#step{
+	float:left;
+	width:300px;
+	padding:10px 40px 10px 15px;
+	font: 15px  'Lucida Sans Unicode',Tahoma, Helvetica, sans-serif;
+	color:#333333;
+	line-height: 190%;
+}
+
+#step h2{
+	font: 20px  Tahoma, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#1f96bf;
+	margin-top:58px;
+	margin-bottom:10px;
+}
+
+#step img{
+	border:0px;
+}
+
+#content{
+	margin:0 auto;
+	padding:10px 40px 50px 50px;
+	font: 15px  'Lucida Sans Unicode',Tahoma, Helvetica, sans-serif;
+	color:#333333;
+	width:900px;
+	line-height: 190%;
+}
+
+#content h2{
+	font: 20px  Tahoma, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#1f96bf;
+	margin-top:55px;
+
+}
+
+
+#footer{
+	margin:0 auto;
+	padding-bottom:30px;
+	padding-top:20px;
+	width:980px;
+	background:#eff1f5;
+	border-top:1px solid #bbbbbb;
+	text-align:center;
+	color:#666666;
+	font: 13px  'Lucida Sans Unicode',Tahoma, Verdana, Arial, Sans-Serif;
+	font-variant:small-caps;
+}
+
+#footer a{
+	color:#666;
+	text-decoration: none;
+}
+
+#footer a:visited{
+	color:#666;
+}
+
+#footer a:hover{
+	color:#1f96bf;
+
+}
+
+
+.clean{
+clear:both;
+}
+
