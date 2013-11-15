@@ -4,3 +4,4 @@ encoding//src/cron_service.py=utf-8
 encoding//src/database.py=utf-8
 encoding//src/main.py=utf-8
 encoding//src/wordhandler.py=utf-8
+encoding//src/xmpp_handler.py=utf-8

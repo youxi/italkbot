@@ -44,7 +44,7 @@ class XMPPHandler(webapp.RequestHandler):
 ##            else:
 ##                logging.debug('twitter.sent shit')
         else:
-            message.reply("嗯，然后呢？")
+            message.reply("嗯，然后呢？哈哈哈哈")
             
 logging.getLogger().setLevel(logging.DEBUG)
 ereporter.register_logger()
