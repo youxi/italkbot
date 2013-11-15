@@ -40,11 +40,11 @@ class XMPPHandler(webapp.RequestHandler):
 ##            twitter = AppEngineTwitter()
 ##            twitter.set_oauth(config.OAUTH_KEY, config.OAUTH_SECRET, acc_key[0].token,acc_key[0].secret)
 ##            if (twitter.verify() == 200):
-##                twitter.update(messageBody+' 手动更新')
+#                twitter.update(messageBody+' 手动更新')
 ##            else:
-##                logging.debug('twitter.sent shit')
+#                logging.debug('twitter.sent shit')
         else:
-            message.reply("嗯，然后呢？哈哈哈哈哈哈1")
+            message.reply("嗯，然后呢？哈哈哈哈哈哈")
             
 logging.getLogger().setLevel(logging.DEBUG)
 ereporter.register_logger()
